@@ -46,7 +46,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    with open("data/8_adjacent_max_prod.txt", "r") as f:
+    with open("data/008_adjacent_max_prod.txt", "r") as f:
         data = int(f.read())
 
     sol = Solution(data, 13)
