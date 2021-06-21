@@ -1,0 +1,22 @@
+https://projecteuler.net/problem=17
+
+Numbers 1->9:
+3+3+5+4+4+3+5+5+4 = 36
+
+Numbers 10->19:
+3+6+6+8+8+7+7+9+8+8 = 70
+
+Numbers 20->99:
+(Twenty, Thirty, ..., Ninety) => 6+6+5+5+5+7+6+6 = 46
+=> Prefixes (ten occurrences per prefix) = 6*10 + 6*10 + 5*10 + ... + 6*10 = 46*10 = 460
+=> Digits * 8 = Numbers 1->9 * 8 = 36*8 = 288
+=> Total = 460+288 = 748
+
+Numbers 100->999:
+Hundreds column = Numbers 1->9; 100 times each => 36*100 = 3600
+Tens/Digits column = Numbers 1->99; 9 'rounds' => (36+70+748)*9 = 7686
+The word 'hundred': only occurs for 'whole hundreds', e.g. 200, 400, etc. => 7*9 = 63
+The words 'hundred and': occurs every other time => 10*(900-9) = 10*891 = 8910
+=> Total for 100->999 = 3600+7686+63+8910 = 20259
+
+=> Total = 36+70+748+20259 = 21124
